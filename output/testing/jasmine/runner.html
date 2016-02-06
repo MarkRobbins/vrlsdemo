@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Jasmine Spec Runner v2.4.1</title>
+
+  <link rel="shortcut icon" type="image/png" href="tools/jasmine-2.4.1/jasmine_favicon.png">
+  <link rel="stylesheet" href="tools/jasmine-2.4.1/jasmine.css">
+
+  <script src="tools/jasmine-2.4.1/jasmine.js"></script>
+  <script src="tools/jasmine-2.4.1/jasmine-html.js"></script>
+  <script src="tools/jasmine-2.4.1/boot.js"></script>
+
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <!-- then require.js -->
+  <!--
+  <script type="text/javascript" src="lib/require.js"></script>
+  -->
+  <script type="text/javascript" src="../../../node_modules/requirejs/require.js"></script>
+
+  <!-- include source files here... -->
+  <!--
+  <script type="text/javascript" src="../../../src/requireme.js"></script>
+  -->
+
+
+  <!-- include spec files here... -->
+  <!--
+  <script type="text/javascript" src="../../../tests/basic-spec.js"></script>
+  -->
+
+  <script type="text/javascript">
+    require.config({
+      // Karma serves files under /base, which is the basePath from your config file
+      baseUrl: '/project',
+
+      paths:{
+        //'tests' : 'tests'
+      },
+      // dynamically load all test files
+      //deps: allTestFiles,
+
+      // we have to kickoff jasmine, as it is asynchronous
+      //callback: window.__karma__.start
+    });
+    if (true) {
+      requirejs(['tests/main'],function(main){
+        console.log('got main');
+      },function(error){
+        console.error('Custom ERROR handler',error);
+        //error.requireModules : is Array of all failed modules
+        var failedId = error.requireModules && error.requireModules[0];
+        console.error(failedId);
+        console.error(error.message);
+        //console.info(error);
+        try { throw new Error(); }
+        catch (e) {
+          console.info(e.stack);
+          // //var re = /(\w+)@|at (\w+) \(/g, st = e.stack, m;
+          // var re = /\s? at \s?([a-zA-Z_0-9\.]+) \(/g, st = e.stack, m;
+          // //\s? at \s?([a-zA-Z_0-9\.]+) \(
+          // re.exec(st), m = re.exec(st);
+          // console.log('m',m);
+          // if (m!==null) {
+          //   callerName = m[1];// || m[2];
+          // }
+        }
+      });
+    }
+
+
+    // window.addEventListener("load", function onLoad() {
+    //   return;
+    //   var jasmineEnv = jasmine.getEnv();
+    //       //reporter = new jasmine.TrivialReporter();
+    //
+    //   //jasmineEnv.addReporter(reporter);
+    //   setTimeout(function () {
+    //     jasmineEnv.execute();
+    //     // Without this setTimeout, the specs don't always get execute in webKit browsers, I don't know why
+    //   }, 10);
+    //   window.removeEventListener("load", onLoad, true);
+    // }, true);
+    // function jasmineFinished(){
+    //   console.log('jasmineFinished');
+    // }
+
+  </script>
+
+</head>
+
+<body>
+  <audio id="yessound" src="tools/yes.mp3" preload="auto" />
+  <audio id="nosound" src="tools/no.mp3" preload="auto" />
+  <audio id="loadedsound" src="tools/loaded.mp3" preload="auto" />
+
+</body>
+</html>
