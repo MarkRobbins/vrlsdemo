@@ -52,38 +52,22 @@
   </Config>
   <Files>
     <Folder
-      Name="Html Source Files"
-      Filters="*.html;*.htm;">
+      Name="Config Files"
+      Filters="*.json;*.gitignore;*.eslintrc;*.jshintrc">
+      <F N=".eslintrc"/>
+      <F N=".gitignore"/>
+      <F N=".jshintrc"/>
+      <F N="package.json"/>
     </Folder>
     <Folder
-      Name="Markdown Files"
-      Filters="*.md">
-      <F N="README.md"/>
+      Name="Util Files"
+      Filters="*.js">
+      <F N="gulpfile.js"/>
+      <F N="karma.conf.js"/>
+      <F N="test-main.js"/>
     </Folder>
-    <Folder
-      Name="Style Files"
-      Filters="*.css;*.less;*.sass"/>
-    <Folder
-      Name="Jsx Files"
-      Filters="*.jsx"/>
-    <Folder
-      Name="Javascript Files"
-      Filters="*.js"/>
     <Folder
       Name="Other Files"
-      Filters="">
-      <F
-        N="app/*.*"
-        Recurse="1"
-        Excludes="*.hg*;*node_modules*;*.vpw;*.vpwhist;*.vtg;*.vpj;.meteor/"/>
-      <F
-        N="documentation/*.*"
-        Recurse="1"
-        Excludes="*.hg*;*node_modules*;*.vpw;*.vpwhist;*.vtg;*.vpj"/>
-      <F
-        N="make/*.*"
-        Recurse="1"
-        Excludes="*.hg*;*node_modules*;*.vpw;*.vpwhist;*.vtg;*.vpj"/>
-    </Folder>
+      Filters=""/>
   </Files>
 </Project>

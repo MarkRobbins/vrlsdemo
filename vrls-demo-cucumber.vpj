@@ -52,38 +52,18 @@
   </Config>
   <Files>
     <Folder
-      Name="Html Source Files"
-      Filters="*.html;*.htm;">
-    </Folder>
-    <Folder
-      Name="Markdown Files"
-      Filters="*.md">
-      <F N="README.md"/>
-    </Folder>
-    <Folder
-      Name="Style Files"
-      Filters="*.css;*.less;*.sass"/>
-    <Folder
-      Name="Jsx Files"
-      Filters="*.jsx"/>
-    <Folder
-      Name="Javascript Files"
+      Name="Definition Files"
       Filters="*.js"/>
+    <Folder
+      Name="Feature Files"
+      Filters="*.feature"/>
     <Folder
       Name="Other Files"
       Filters="">
       <F
-        N="app/*.*"
+        N="tests/features/*.*"
         Recurse="1"
         Excludes="*.hg*;*node_modules*;*.vpw;*.vpwhist;*.vtg;*.vpj;.meteor/"/>
-      <F
-        N="documentation/*.*"
-        Recurse="1"
-        Excludes="*.hg*;*node_modules*;*.vpw;*.vpwhist;*.vtg;*.vpj"/>
-      <F
-        N="make/*.*"
-        Recurse="1"
-        Excludes="*.hg*;*node_modules*;*.vpw;*.vpwhist;*.vtg;*.vpj"/>
     </Folder>
   </Files>
 </Project>

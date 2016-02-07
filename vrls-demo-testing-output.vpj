@@ -52,38 +52,15 @@
   </Config>
   <Files>
     <Folder
-      Name="Html Source Files"
-      Filters="*.html;*.htm;">
-    </Folder>
+      Name="Source Files "
+      Filters="*.c;*.C;*.cc;*.cpp;*.cp;*.cxx;*.c++;*.prg;*.pas;*.dpr;*.asm;*.s;*.bas;*.java;*.cs;*.sc;*.e;*.cob;*.html;*.rc;*.tcl;*.py;*.pl;*.d;*.m;*.mm;*.au3;*.ahk;"/>
     <Folder
-      Name="Markdown Files"
-      Filters="*.md">
-      <F N="README.md"/>
-    </Folder>
-    <Folder
-      Name="Style Files"
-      Filters="*.css;*.less;*.sass"/>
-    <Folder
-      Name="Jsx Files"
-      Filters="*.jsx"/>
-    <Folder
-      Name="Javascript Files"
-      Filters="*.js"/>
-    <Folder
-      Name="Other Files"
+      Name="Other Files "
       Filters="">
       <F
-        N="app/*.*"
+        N="output/testing/*.*"
         Recurse="1"
         Excludes="*.hg*;*node_modules*;*.vpw;*.vpwhist;*.vtg;*.vpj;.meteor/"/>
-      <F
-        N="documentation/*.*"
-        Recurse="1"
-        Excludes="*.hg*;*node_modules*;*.vpw;*.vpwhist;*.vtg;*.vpj"/>
-      <F
-        N="make/*.*"
-        Recurse="1"
-        Excludes="*.hg*;*node_modules*;*.vpw;*.vpwhist;*.vtg;*.vpj"/>
     </Folder>
   </Files>
 </Project>
