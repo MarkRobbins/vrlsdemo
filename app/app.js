@@ -1,5 +1,6 @@
 if (Meteor.isClient) {
   // counter starts at 0
+  //var start=return2();
   Session.setDefault('counter', 0);
 
   Template.hello.helpers({
