@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="node_mods" pattern="file[vrls-demo]:node_modules//*" />
+</component>

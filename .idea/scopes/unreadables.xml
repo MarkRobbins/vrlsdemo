@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="unreadables" pattern="file:*.vpwhist||file:*.vtg" />
+</component>

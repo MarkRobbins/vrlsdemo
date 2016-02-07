@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="configs" pattern="file:.eslintrc||file:.gitignore||file:.jshintrc||file:package.json" />
+</component>

@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="features" pattern="file:tests/features//*.feature" />
+</component>

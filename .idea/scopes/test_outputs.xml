@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="test-outputs" pattern="file:output/testing/karma/DHTML/report.html||file[vrls-demo]:output/testing/karma/coverage//*" />
+</component>

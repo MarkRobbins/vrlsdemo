@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="jasmine-tests" pattern="file:tests/jasmine//*-spec.js" />
+</component>

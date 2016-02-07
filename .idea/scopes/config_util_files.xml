@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="config util files" pattern="file:gulpfile.js||file:karma.conf.js||file:test-main.js||file:tests.webpack.js" />
+</component>

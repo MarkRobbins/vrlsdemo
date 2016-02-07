@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="slickedit" pattern="file:*.vpj||file:*.vpw" />
+</component>
