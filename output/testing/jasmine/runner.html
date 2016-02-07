@@ -14,18 +14,21 @@
   <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
   <!-- then require.js -->
   <!--
+  <script type="text/javascript" src="../../../node_modules/requirejs/require.js"></script>
   <script type="text/javascript" src="lib/require.js"></script>
   -->
-  <script type="text/javascript" src="../../../node_modules/requirejs/require.js"></script>
+  <script type="text/javascript" src="tools/require.js"></script>
 
   <!-- include source files here... -->
   <!--
+  <script type="text/javascript" src="../../../app/requireme.js"></script>
   <script type="text/javascript" src="../../../src/requireme.js"></script>
   -->
 
 
   <!-- include spec files here... -->
   <!--
+  <script type="text/javascript" src="../../../tests/jasmine/basic-spec.js"></script>
   <script type="text/javascript" src="../../../tests/basic-spec.js"></script>
   -->
 
@@ -44,7 +47,7 @@
       //callback: window.__karma__.start
     });
     if (true) {
-      requirejs(['tests/main'],function(main){
+      requirejs(['tests/jasmine/main'],function(main){
         console.log('got main');
       },function(error){
         console.error('Custom ERROR handler',error);

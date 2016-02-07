@@ -89,5 +89,6 @@
       "Session":true,
       "FlowRouter":true,
       "ReactLayout":true,
-      "Template":true}
+      "Template":true
+    }
 }

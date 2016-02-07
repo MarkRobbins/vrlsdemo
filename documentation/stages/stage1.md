@@ -56,6 +56,7 @@ These will be required for Code Coverage Reporter in Jasmine (Best to install th
 	mongodb@2.1.4
 	mongodb-rest@0.10.14
 	mup@0.11.3
+	phantomjs@1.9.19
 	reload@0.7.0
 
 
