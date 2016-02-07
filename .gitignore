@@ -19,6 +19,8 @@ node_modules
 
 ## TESTING
 output/testing/karma/coverage/**/*
+output/testing/karma/DHTML/report.html
+# output/testing/karma/DHTML/report.html
 
 
 ### WebStorm ###
@@ -90,4 +92,3 @@ fabric.properties
 *.vpwhist
 *.vtg
 
-app/tests/jasmine/coverage/**/*
