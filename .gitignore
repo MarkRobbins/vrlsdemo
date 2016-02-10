@@ -93,3 +93,4 @@ fabric.properties
 *.vtg
 
 output/testing/karma/DHTML/report.html
+resources/**/*
