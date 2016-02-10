@@ -7,7 +7,7 @@ Meteor.startup(()=>{
   //   passwordSignupFields: 'USERNAME_AND_EMAIL'
   // });
 
-  if (Meteor.users.find().count() === 0) {
+  if (Meteor.users.find().count() === 0||Meteor.users.find({username:'markrobbins'}).fetch().length===0) {
     Accounts.createUser({
       username:'markrobbins',
       email:"mark.robbins@mrobbinsassoc.com",

@@ -94,6 +94,7 @@
     transition:all 1s;
 }
 
+.profile-container,
 .page-form-container{
     margin-top:100px;
 }

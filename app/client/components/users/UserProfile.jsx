@@ -39,7 +39,7 @@ UserProfile = React.createClass({
     console.log('Meteor.user():',Meteor.user());
     let username=Meteor.user()!==undefined?Meteor.user().username:'Error';
     return (
-      <div className="container">
+      <div className="profile-container container">
         <div className="row">
           <div className="col-sm-6 col-sm-offset-3">
             <h1>Profile</h1>

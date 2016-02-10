@@ -8,6 +8,11 @@ Header = React.createClass({
   statics: {
     returnFalse(){
       return false;
+    },
+    constStrings(){
+      return {
+        routeLogoutSuccess:'Home'
+      }
     }
   },
   getMeteorData(){
@@ -17,6 +22,8 @@ Header = React.createClass({
   },
   handleLogout() {
     Meteor.logout();
+    var strings=Header.constStrings();
+    FlowRouter.go(strings.routeLogoutSuccess);
   },
   getInitialState(){
     return {};
